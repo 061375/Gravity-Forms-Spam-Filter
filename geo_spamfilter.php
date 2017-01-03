@@ -30,8 +30,10 @@ function geo_spamfilter_check() {
                 // if matches a phone number then skip
                 if(preg_match('/\(\d{3}\) \d{3}-\d{4}/',$value))continue;
                 
+                $realwords = new JH_RealWords();
+                
                 // run the real-words algorithm
-                $spam = JH_RealWords::real_words($value);
+                $spam = $realwords->real_words($value);
                 
             }
         }

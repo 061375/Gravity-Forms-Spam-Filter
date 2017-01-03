@@ -1,0 +1,6 @@
+[submodule "real-words"]
+	path = real-words
+	url = git@github.com:061375/real-words.git
+[submodule "includes/classes/real-words"]
+	path = includes/classes/real-words
+	url = git@github.com:061375/real-words.git
